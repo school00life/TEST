@@ -104,7 +104,7 @@
       <div class="video-popup">
         <div class="video-src">
           <div class="iframe-src">
-            <iframe src="https://youtu.be/V8fEyhsEwN0?si=nE6nhKPxt777ZTiI" allowfullscreen></iframe>
+            <iframe src="https://youtu.be/V8fEyhsEwN0?si=nE6nhKPxt777ZTiI&amp;showinfo=0" allowfullscreen></iframe>
           </div>
         </div>
       </div>
