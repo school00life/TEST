@@ -4,7 +4,7 @@ let iconCart = document.querySelector('.icon-cart');
 let iconCartSpan = document.querySelector('.icon-cart span');
 let body = document.querySelector('body');
 let closeCart = document.querySelector('.close');
-let products = [];
+let listProducts = [];
 let cart = [];
 
 
@@ -17,11 +17,11 @@ closeCart.addEventListener('click', () => {
 
     const addDataToHTML = () => {
     // remove datas default from HTML
-
+        listProductHTML.innerHTML = '';
         // add new datas
-        if(products.length > 0) // if has data
+        if(listProducts.length > 0) // if has data
         {
-            products.forEach(product => {
+            listProductsproducts.forEach(product => {
                 let newProduct = document.createElement('div');
                 newProduct.dataset.id = product.id;
                 newProduct.classList.add('item');
@@ -60,20 +60,20 @@ const addToCart = (product_id) => {
     addCartToMemory();
 }
 const addCartToMemory = () => {
-    localStorage.setItem('cart', JSON.stringify(cart));
+    localStorage.setItem('cart', JSON.stringify(carts));
 }
 const addCartToHTML = () => {
     listCartHTML.innerHTML = '';
     let totalQuantity = 0;
     if(cart.length > 0){
-        cart.forEach(item => {
-            totalQuantity = totalQuantity +  item.quantity;
-            let newItem = document.createElement('div');
-            newItem.classList.add('item');
-            newItem.dataset.id = item.product_id;
+        cart.forEach(cart => {
+            totalQuantity = totalQuantity +  cart.quantity;
+            let newCart = document.createElement('div');
+            newCart.classList.add('item');
+            newCart.dataset.id = cart.product_id;
 
-            let positionProduct = products.findIndex((value) => value.id == item.product_id);
-            let info = products[positionProduct];
+            let positionProduct = listProducts.findIndex((value) => value.id == cart.product_id);
+            let info = listProducts[positionProduct];
             listCartHTML.appendChild(newItem);
             newItem.innerHTML = `
             <div class="image">
@@ -82,13 +82,14 @@ const addCartToHTML = () => {
                 <div class="name">
                 ${info.name}
                 </div>
-                <div class="totalPrice">$${info.price * item.quantity}</div>
+                <div class="totalPrice">$${info.price * cart.quantity}</div>
                 <div class="quantity">
                     <span class="minus"><</span>
-                    <span>${item.quantity}</span>
+                    <span>${cart.quantity}</span>
                     <span class="plus">></span>
                 </div>
             `;
+        listCartHTML.appendChild(newCart);
         })
     }
     iconCartSpan.innerText = totalQuantity;

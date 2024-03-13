@@ -19,13 +19,33 @@
             </div>
         </header>
         <div class="listProduct">
-
+            <div class="item">
+                <img src="image/1.png" alt="">
+                <h2>NAME PRODUCT</h2>
+                <div class="price">$200</div>
+                <button class="addCart">
+                    Add To Cart
+                </button>
+            </div>
         </div>
     </div>
     <div class="cartTab">
         <h1>Shopping Cart</h1>
         <div class="listCart">
-            
+            <div class="item">
+                <img src="image/1.png" alt="">
+            </div>
+            <div class="name">
+                NAME
+            </div>
+            <div class="totalPrice">
+                $200
+            </div>
+            <div class="quantity">
+                <span class="minus"></span>
+                <span>1</span>
+                <span class="plus">></span>
+            </div>
         </div>
         <div class="btn">
             <button class="close">CLOSE</button>
