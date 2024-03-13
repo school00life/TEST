@@ -1,58 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
 </head>
-<body class="">
-    
-    <div class="container">
-        <header>
-            <div class="title">PRODUCT LIST</div>
-            <div class="icon-cart">
-                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 15a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm0 0h8m-8 0-1-4m9 4a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-9-4h10l2-7H3m2 7L3 4m0 0-.792-3H1"/>
-                </svg>
-                <span>0</span>
-            </div>
-        </header>
-        <div class="listProduct">
-            <div class="item">
-                <img src="image/1.png" alt="">
-                <h2>NAME PRODUCT</h2>
-                <div class="price">$200</div>
-                <button class="addCart">
-                    Add To Cart
-                </button>
-            </div>
-        </div>
-    </div>
-    <div class="cartTab">
-        <h1>Shopping Cart</h1>
-        <div class="listCart">
-            <div class="item">
-                <img src="image/1.png" alt="">
-            </div>
-            <div class="name">
-                NAME
-            </div>
-            <div class="totalPrice">
-                $200
-            </div>
-            <div class="quantity">
-                <span class="minus"><</span>
-                <span>1</span>
-                <span class="plus">></span>
-            </div>
-        </div>
-        <div class="btn">
-            <button class="close">CLOSE</button>
-            <button class="checkOut">Check Out</button>
-        </div>
-    </div>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .frem{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: url('./gifs.gif');
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .frem p{
+        position: absolute;
+        top: 3rem;
+        font-size: 7rem;
+        color: #00000063;
+    }
+    .frem h2{
+        position: absolute;
+        bottom: 8rem;
+        font-size: 34px;
+    }
+    .frem h5{
+        position: absolute;
+        bottom: 6rem;
+        color: #9c9c9c;
+    }
+    .frem a{
+        position: absolute;
+        bottom: 1rem;
+        background: linear-gradient(45deg, #ff0034, #ffbc00);
+        padding: 12px;
+        color: white;
+        text-decoration: none;
+        font-size: 23px;
+        border-radius: 13px;
+    }
+</style>
 
-    <script src="app.js"></script>
+<body>
+    <div class="frem">
+        <p>404</p>
+        <h2>Look like you're lost</h2>
+        <h5>the page you are looking for not avaible!</h5>
+        <a href="#">Go to Home</a>
+    </div>
 </body>
+
 </html>
