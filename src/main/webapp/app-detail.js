@@ -84,7 +84,7 @@ function showDetail(){
 
     products.filter(product => product.id != productId).forEach(product => {
         let newProduct = document.createElement('a');
-        newProduct.href = `detail.html?id=${product.id}`;
+        newProduct.href = `detail.jsp?id=${product.id}`;
         newProduct.classList.add('item');
         newProduct.innerHTML = 
             `<img src="image/${product.image}" alt="">
