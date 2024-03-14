@@ -64,7 +64,7 @@ let products = [
     },
     {
         id: 9,
-        name: 'Hamburger de dinde',
+        name: 'BBQ Bacon Burger',
         image: '9.png',
         price: 20
     },

@@ -44,24 +44,24 @@ let products = [
     },
     {
         id: 7,
-        name: 'Hamburger au saumon grillé',
+        name: 'Chicken Burger',
         image: '7.png',
         price: 15,
-        description: 'Steak de saumon grillé,\nLaitue,\nTranches d\'avocat,\nSauce à l\'aneth,\nTomate,\nPain complet aux graines de sésame'
+        description: 'Sink your teeth into the timeless perfection of our Chicken Burger,\n an experience that never goes out of style.'
     },
     {
         id: 8,
-        name: 'Hamburger hawaïen',
+        name: 'Veggie Delight Burger',
         image: '8.png',
         price: 20,
-        description: 'Steak haché de bœuf,\nAnanas grillé,\nBacon,\nSauce teriyaki,\nLaitue,\nPain à burger traditionnel'
+        description: 'Embrace the vibrant flavors of our Veggie Delight Burger,\n a celebration of freshness and wholesome goodness.'
     },
     {
         id: 9,
-        name: 'Hamburger de dinde',
+        name: 'BBQ Bacon Burger',
         image: '9.png',
         price: 20,
-        description: 'Steak haché de dinde,\nSauce au miel et à la moutarde,\nLaitue,\nOignon rouge,\nTomate,\nPain complet aux graines de pavot'
+        description: 'Indulge in a symphony of smoky,\n savory flavors with our BBQ Bacon Burger,\n grilled and topped with crispy bacon'
     },
     
 ];
