@@ -2,7 +2,7 @@
 
 // Fonction pour se connecter à la base de données
 function connectDB() {
-    $servername = "localhost";
+    $servername = "http://51.20.122.177:8090/";
     $username = "root";
     $password = "";
     $dbname = "web";
