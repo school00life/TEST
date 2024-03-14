@@ -28,7 +28,7 @@ let products = [
     },
     {
         id: 3,
-        name: 'Hamburger végétarien',
+        name: 'Hamburger vegetarien',
         image: '3.png',
         price: 15
     },
@@ -40,7 +40,7 @@ let products = [
     },
     {
         id: 5,
-        name: 'Hamburger méditerranéen',
+        name: 'Hamburger méditerraneen',
         image: '5.png',
         price: 15
     },
@@ -52,13 +52,13 @@ let products = [
     },
     {
         id: 7,
-        name: 'Hamburger au saumon grillé',
+        name: 'Chicken Burger',
         image: '7.png',
         price: 15
     },
     {
         id: 8,
-        name: 'Hamburger hawaïen',
+        name: 'Veggie Delight Burger',
         image: '8.png',
         price: 20
     },

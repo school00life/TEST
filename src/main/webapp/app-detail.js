@@ -16,7 +16,7 @@ let products = [
     },
     {
         id: 3,
-        name: 'Hamburger végétarien',
+        name: 'Hamburger vegetarien',
         image: '3.png',
         price: 15,
         description: 'Galette de haricots noirs ou de lentilles,\nAvocat en tranches,\nLaitue,\nTomate,\nSauce au yaourt épicée,\nPain complet'
@@ -30,7 +30,7 @@ let products = [
     },
     {
         id: 5,
-        name: 'Hamburger méditerranéen',
+        name: 'Hamburger mediterraneen',
         image: '5.png',
         price: 15,
         description: 'Burger végétarien à base de pois chiches et d\'épices méditerranéennes,\nHoumous,\nConcombre en tranches,\nTomate séchée,\nFeta émiettée,\nPain ciabatta'
