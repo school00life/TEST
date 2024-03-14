@@ -3,63 +3,65 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" type ="x-icon" href ="logo.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style-login.css">
+    <title>| Burger House</title>
 </head>
-<style>
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    .frem{
-        width: 100%;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        background: url('./gifs.gif');
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-    .frem p{
-        position: absolute;
-        top: 3rem;
-        font-size: 7rem;
-        color: #00000063;
-    }
-    .frem h2{
-        position: absolute;
-        bottom: 8rem;
-        font-size: 34px;
-    }
-    .frem h5{
-        position: absolute;
-        bottom: 6rem;
-        color: #9c9c9c;
-    }
-    .frem a{
-        position: absolute;
-        bottom: 1rem;
-        background: linear-gradient(45deg, #ff0034, #ffbc00);
-        padding: 12px;
-        color: white;
-        text-decoration: none;
-        font-size: 23px;
-        border-radius: 13px;
-    }
-</style>
 
 <body>
-    <div class="frem">
-        <p>404</p>
-        <h2>rani 79adet </h2>
-        <h5>lale9iti shi site zwen sifto liya ra kel9a we knzid we gama ketkhdem fe lakher</h5>
-        <a href="https://www.youtube.com/">YouTube</a>
 
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form action="user.php" method="post">
+                <h1>Create Account</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <span>or use your email for registration</span>
+                <input type="text" placeholder="Name" name="nom">
+                <input type="email" placeholder="Email" name="email">
+                <input type="password" placeholder="Password" name="password">
+                <button type="submit" name="signup">Sign Up</button>
+            </form>
+        </div>
+        <div class="form-container sign-in">
+            <form action="user.php" method="post">
+                <h1>Login</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <span>or use your email password</span>
+                <input type="email" placeholder="Email" name="email">
+                <input type="password" placeholder="Password" name="password">
+                <a href="#">Forget Your Password?</a>
+                <button type="submit" name="login">Login</button>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Welcome Back!</h1>
+                    <p>Enter your personal details to use all of site features</p>
+                    <button class="hidden" id="login">Login</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Hello, Friend!</h1>
+                    <p>Register with your personal details to use all of site features</p>
+                    <button class="hidden" id="register">Sign Up</button>
+                </div>
+            </div>
+        </div>
     </div>
+
+    <script src="script-login.js"></script>
 </body>
 
 </html>
