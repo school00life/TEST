@@ -40,7 +40,7 @@ let products = [
     },
     {
         id: 5,
-        name: 'Hamburger méditerraneen',
+        name: 'Hamburger mediterraneen',
         image: '5.png',
         price: 15
     },
