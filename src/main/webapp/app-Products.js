@@ -17,55 +17,55 @@ let products = [
     {
         id: 1,
         name: 'Hamburger classique',
-        image: '1.PNG',
+        image: '1.png',
         price: 15
     },
     {
         id: 2,
         name: 'Hamburger barbecue',
-        image: '2.PNG',
+        image: '2.png',
         price: 20
     },
     {
         id: 3,
         name: 'Hamburger végétarien',
-        image: '3.PNG',
+        image: '3.png',
         price: 15
     },
     {
         id: 4,
         name: 'Hamburger au poulet cajun',
-        image: '4.PNG',
+        image: '4.png',
         price: 20
     },
     {
         id: 5,
         name: 'Hamburger méditerranéen',
-        image: '5.PNG',
+        image: '5.png',
         price: 15
     },
     {
         id: 6,
         name: 'Hamburger Tex-Mex',
-        image: '6.PNG',
+        image: '6.png',
         price: 20
     },
     {
         id: 7,
         name: 'Hamburger au saumon grillé',
-        image: '7.PNG',
+        image: '7.png',
         price: 15
     },
     {
         id: 8,
         name: 'Hamburger hawaïen',
-        image: '8.PNG',
+        image: '8.png',
         price: 20
     },
     {
         id: 9,
         name: 'Hamburger de dinde',
-        image: '9.PNG',
+        image: '9.png',
         price: 20
     },
    

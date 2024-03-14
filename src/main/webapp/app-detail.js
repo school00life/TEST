@@ -3,63 +3,63 @@ let products = [
     {
         id: 1,
         name: 'Hamburger classique',
-        image: '1.PNG',
+        image: '1.png',
         price: 15,
         description: 'Steak haché de bœuf,\nLaitue,\nTomate,\nOignon,\nFromage cheddar,\nPain à hamburger'
     },
     {
         id: 2,
         name: 'Hamburger barbecue',
-        image: '2.PNG',
+        image: '2.png',
         price: 20,
         description: 'Steak haché de bœuf assaisonné de sauce barbecue,\nBacon grillé,\nOignon caramélisé,\nFromage pepper jack,\nPain au sésame'
     },
     {
         id: 3,
         name: 'Hamburger végétarien',
-        image: '3.PNG',
+        image: '3.png',
         price: 15,
         description: 'Galette de haricots noirs ou de lentilles,\nAvocat en tranches,\nLaitue,\nTomate,\nSauce au yaourt épicée,\nPain complet'
     },
     {
         id: 4,
         name: 'Hamburger au poulet cajun',
-        image: '4.PNG',
+        image: '4.png',
         price: 20,
         description: 'Blanc de poulet grillé assaisonné avec des épices cajun,\nLaitue,\nPoivron grillé,\nOignon rouge,\nFromage suisse,\nPain aux céréales'
     },
     {
         id: 5,
         name: 'Hamburger méditerranéen',
-        image: '5.PNG',
+        image: '5.png',
         price: 15,
         description: 'Burger végétarien à base de pois chiches et d\'épices méditerranéennes,\nHoumous,\nConcombre en tranches,\nTomate séchée,\nFeta émiettée,\nPain ciabatta'
     },
     {
         id: 6,
         name: 'Hamburger Tex-Mex',
-        image: '6.PNG',
+        image: '6.png',
         price: 20,
         description: 'Steak haché de bœuf épicé avec des assaisonnements Tex-Mex,\nGuacamole,\nPiment jalapeño en tranches,\nLaitue,\nFromage Monterey Jack,\nPain aux graines de maïs'
     },
     {
         id: 7,
         name: 'Hamburger au saumon grillé',
-        image: '7.PNG',
+        image: '7.png',
         price: 15,
         description: 'Steak de saumon grillé,\nLaitue,\nTranches d\'avocat,\nSauce à l\'aneth,\nTomate,\nPain complet aux graines de sésame'
     },
     {
         id: 8,
         name: 'Hamburger hawaïen',
-        image: '8.PNG',
+        image: '8.png',
         price: 20,
         description: 'Steak haché de bœuf,\nAnanas grillé,\nBacon,\nSauce teriyaki,\nLaitue,\nPain à burger traditionnel'
     },
     {
         id: 9,
         name: 'Hamburger de dinde',
-        image: '9.PNG',
+        image: '9.png',
         price: 20,
         description: 'Steak haché de dinde,\nSauce au miel et à la moutarde,\nLaitue,\nOignon rouge,\nTomate,\nPain complet aux graines de pavot'
     },
