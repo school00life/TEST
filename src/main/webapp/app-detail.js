@@ -74,7 +74,7 @@ function showDetail(){
     let thisProduct = products.find(product => product.id == productId);
 
     if(!thisProduct){
-        window.location.href = "products.html"; // Rediriger vers la page des produits si le produit n'est pas trouvé
+        window.location.href = "products.jsp"; // Rediriger vers la page des produits si le produit n'est pas trouvé
     }
 
     detail.querySelector('.image img').src = `image/${thisProduct.image}`;

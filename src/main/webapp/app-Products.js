@@ -139,7 +139,7 @@ document.querySelectorAll('.item button').forEach((button, index) => {
 
 // Fonction pour gérer le clic sur chaque élément de produit
 function redirectToDetailPage(productId) {
-    window.location.href = `detail.html?id=${productId}`;
+    window.location.href = `detail.jsp?id=${productId}`;
 }
 
 // Sélectionnez tous les éléments .item et ajoutez un gestionnaire d'événements de clic
