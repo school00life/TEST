@@ -16,60 +16,61 @@ closeShopping.addEventListener('click', ()=>{
 let products = [
     {
         id: 1,
-        name: 'PRODUCT NAME 1',
+        name: 'Hamburger classique',
         image: '1.PNG',
-        price: 15 
+        price: 15
     },
     {
         id: 2,
-        name: 'PRODUCT NAME 2',
+        name: 'Hamburger barbecue',
         image: '2.PNG',
         price: 20
     },
     {
         id: 3,
-        name: 'PRODUCT NAME 3',
+        name: 'Hamburger végétarien',
         image: '3.PNG',
-        price: 30
+        price: 15
     },
     {
         id: 4,
-        name: 'PRODUCT NAME 4',
+        name: 'Hamburger au poulet cajun',
         image: '4.PNG',
-        price: 35
+        price: 20
     },
     {
         id: 5,
-        name: 'PRODUCT NAME 5',
+        name: 'Hamburger méditerranéen',
         image: '5.PNG',
-        price: 70
+        price: 15
     },
     {
         id: 6,
-        name: 'PRODUCT NAME 6',
+        name: 'Hamburger Tex-Mex',
         image: '6.PNG',
-        price: 100
+        price: 20
     },
     {
         id: 7,
-        name: 'PRODUCT NAME 5',
+        name: 'Hamburger au saumon grillé',
         image: '7.PNG',
-        price: 70
+        price: 15
     },
     {
         id: 8,
-        name: 'PRODUCT NAME 5',
+        name: 'Hamburger hawaïen',
         image: '8.PNG',
-        price: 70
+        price: 20
     },
     {
         id: 9,
-        name: 'PRODUCT NAME 5',
+        name: 'Hamburger de dinde',
         image: '9.PNG',
-        price: 70
-    }
-
+        price: 20
+    },
+   
 ];
+
 let listCards  = [];
 function initApp(){
     products.forEach((value, key) =>{
