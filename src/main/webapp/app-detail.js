@@ -5,14 +5,14 @@ let products = [
         name: 'Hamburger classique',
         image: '1.png',
         price: 15,
-        description: 'Steak hache de bœuf,\nLaitue,\nTomate,\nOignon,\nFromage cheddar,\nPain a hamburger'
+        description: 'Steak hache de boeuf,\nLaitue,\nTomate,\nOignon,\nFromage cheddar,\nPain a hamburger'
     },
     {
         id: 2,
         name: 'Hamburger barbecue',
         image: '2.png',
         price: 20,
-        description: 'Steak hache de bœuf assaisonne de sauce barbecue,\nBacon grille,\nOignon caramelise,\nFromage pepper jack,\nPain au sesame'
+        description: 'Steak hache de boeuf assaisonne de sauce barbecue,\nBacon grille,\nOignon caramelise,\nFromage pepper jack,\nPain au sesame'
     },
     {
         id: 3,
