@@ -105,7 +105,7 @@
         </div>
       </div>
       <div class="section__container reservation__container">
-        <form action="products.jsp">
+        <form action="products.html">
           <button class="btn" > N E X T </button>
         </form>
       </div>
