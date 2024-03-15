@@ -65,7 +65,6 @@ let products = [
     }
 ];
 
-
 let listCards  = [];
 function showDetail(){
     let detail = document.querySelector('.detail');
