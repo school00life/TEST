@@ -10,7 +10,7 @@
 <body>
     <div class="container">
         <header>
-            <h1>PRODUCT DETAIL</h1>
+            <h1>مرحبا</h1>
             <div class="shopping">
                 <img src="image/shopping.svg">
                 <span class="quantity">0</span>
