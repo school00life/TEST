@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 body {
     margin: 0;
@@ -311,8 +310,6 @@ body.showCart .container {
 .listCart::-webkit-scrollbar {
     width: 0;
 }
-
-
 @media only screen and (max-width: 992px) {
     .listProduct {
         grid-template-columns: repeat(3, 1fr);
