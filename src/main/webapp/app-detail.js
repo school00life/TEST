@@ -5,42 +5,42 @@ let products = [
         name: 'Hamburger classique',
         image: '1.png',
         price: 15,
-        description: 'Steak haché de bœuf,\nLaitue,\nTomate,\nOignon,\nFromage cheddar,\nPain à hamburger'
+        description: 'Steak hache de bœuf,\nLaitue,\nTomate,\nOignon,\nFromage cheddar,\nPain a hamburger'
     },
     {
         id: 2,
         name: 'Hamburger barbecue',
         image: '2.png',
         price: 20,
-        description: 'Steak haché de bœuf assaisonné de sauce barbecue,\nBacon grillé,\nOignon caramélisé,\nFromage pepper jack,\nPain au sésame'
+        description: 'Steak hache de bœuf assaisonne de sauce barbecue,\nBacon grille,\nOignon caramelise,\nFromage pepper jack,\nPain au sesame'
     },
     {
         id: 3,
         name: 'Hamburger vegetarien',
         image: '3.png',
         price: 15,
-        description: 'Galette de haricots noirs ou de lentilles,\nAvocat en tranches,\nLaitue,\nTomate,\nSauce au yaourt épicée,\nPain complet'
+        description: 'Galette de haricots noirs ou de lentilles,\nAvocat en tranches,\nLaitue,\nTomate,\nSauce au yaourt epicee,\nPain complet'
     },
     {
         id: 4,
         name: 'Hamburger au poulet cajun',
         image: '4.png',
         price: 20,
-        description: 'Blanc de poulet grillé assaisonné avec des épices cajun,\nLaitue,\nPoivron grillé,\nOignon rouge,\nFromage suisse,\nPain aux céréales'
+        description: 'Blanc de poulet grille assaisonne avec des epices cajun,\nLaitue,\nPoivron grille,\nOignon rouge,\nFromage suisse,\nPain aux cereales'
     },
     {
         id: 5,
         name: 'Hamburger mediterraneen',
         image: '5.png',
         price: 15,
-        description: 'Burger végétarien à base de pois chiches et d\'épices méditerranéennes,\nHoumous,\nConcombre en tranches,\nTomate séchée,\nFeta émiettée,\nPain ciabatta'
+        description: 'Burger vegetarien a base de pois chiches \n d\'epices mediterraneennes,\nHoumous,\nConcombre en tranches,\nTomate sechee,\nFeta emiettee,\nPain ciabatta'
     },
     {
         id: 6,
         name: 'Hamburger Tex-Mex',
         image: '6.png',
         price: 20,
-        description: 'Steak haché de bœuf épicé avec des assaisonnements Tex-Mex,\nGuacamole,\nPiment jalapeño en tranches,\nLaitue,\nFromage Monterey Jack,\nPain aux graines de maïs'
+        description: 'Steak hache de bœuf epice avec des assaisonnements Tex-Mex,\nGuacamole,\nPiment jalapeno en tranches,\nLaitue,\nFromage Monterey Jack,\nPain aux graines de mais'
     },
     {
         id: 7,
