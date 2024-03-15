@@ -311,27 +311,7 @@ body.showCart .container {
 .listCart::-webkit-scrollbar {
     width: 0;
 }
-.card-scroll {
-    overflow-x: auto;
-    white-space: nowrap;
-  }
-  
-  .card {
-    display: inline-block;
-    width: 300px; /* Adjust width as needed */
-    margin-right: 20px; /* Add margin between cards */
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Optional: Add hover effect */
-  .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  }
-  
+
 
 @media only screen and (max-width: 992px) {
     .listProduct {
