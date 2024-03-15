@@ -5,49 +5,49 @@ let products = [
         name: 'Hamburger classique',
         image: '1.png',
         price: 15,
-        description: 'Steak hache de boeuf,\nLaitue,\nTomate,\nOignon,\nFromage cheddar,\nPain a hamburger'
+        description: 'Steak haché de bœuf,\nLaitue,\nTomate,\nOignon,\nFromage cheddar,\nPain à hamburger'
     },
     {
         id: 2,
         name: 'Hamburger barbecue',
         image: '2.png',
         price: 20,
-        description: 'Steak hache de boeuf assaisonne de sauce barbecue,\nBacon grille,\nOignon caramelise,\nFromage pepper jack,\nPain au sesame'
+        description: 'Steak haché de bœuf assaisonné de sauce barbecue,\nBacon grillé,\nOignon caramélisé,\nFromage pepper jack,\nPain au sésame'
     },
     {
         id: 3,
-        name: 'Hamburger vegetarien',
+        name: 'Hamburger végétarien',
         image: '3.png',
         price: 15,
-        description: 'Galette de haricots noirs ou de lentilles,\nAvocat en tranches,\nLaitue,\nTomate,\nSauce au yaourt epicee,\nPain complet'
+        description: 'Galette de haricots noirs ou de lentilles,\nAvocat en tranches,\nLaitue,\nTomate,\nSauce au yaourt épicée,\nPain complet'
     },
     {
         id: 4,
         name: 'Hamburger au poulet cajun',
         image: '4.png',
         price: 20,
-        description: 'Blanc de poulet grille assaisonne avec des epices cajun,\nLaitue,\nPoivron grille,\nOignon rouge,\nFromage suisse,\nPain aux cereales'
+        description: 'Blanc de poulet grillé assaisonné avec des épices cajun,\nLaitue,\nPoivron grillé,\nOignon rouge,\nFromage suisse,\nPain aux céréales'
     },
     {
         id: 5,
-        name: 'Hamburger mediterraneen',
+        name: 'Hamburger méditerranéen',
         image: '5.png',
         price: 15,
-        description: 'Burger vegetarien a base de pois chiches \n d\'epices mediterraneennes,\nHoumous,\nConcombre en tranches,\nTomate sechee,\nFeta emiettee,\nPain ciabatta'
+        description: 'Burger végétarien à base de pois chiches d\'épices méditerranéennes,\nHoumous,\nConcombre en tranches,\nTomate séchée,\nFeta émiettée,\nPain ciabatta'
     },
     {
         id: 6,
         name: 'Hamburger Tex-Mex',
         image: '6.png',
         price: 20,
-        description: 'Steak hache de bœuf epice avec des assaisonnements Tex-Mex,\nGuacamole,\nPiment jalapeno en tranches,\nLaitue,\nFromage Monterey Jack,\nPain aux graines de mais'
+        description: 'Steak haché de bœuf épicé avec des assaisonnements Tex-Mex,\nGuacamole,\nPiment jalapeño en tranches,\nLaitue,\nFromage Monterey Jack,\nPain aux graines de maïs'
     },
     {
         id: 7,
         name: 'Chicken Burger',
         image: '7.png',
         price: 15,
-        description: 'Sink your teeth into the timeless perfection of our Chicken Burger,\n an experience that never goes out of style.'
+        description: 'Savour the timeless perfection of our Chicken Burger,\n an experience that never goes out of style.'
     },
     {
         id: 8,
@@ -62,9 +62,9 @@ let products = [
         image: '9.png',
         price: 20,
         description: 'Indulge in a symphony of smoky,\n savory flavors with our BBQ Bacon Burger,\n grilled and topped with crispy bacon'
-    },
-    
+    }
 ];
+
 
 let listCards  = [];
 function showDetail(){
