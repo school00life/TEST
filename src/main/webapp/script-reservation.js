@@ -1,28 +1,34 @@
 // Retrieve and display reservation details
 const displayReservationDetails = () => {
-    const reservationData = JSON.parse(localStorage.getItem('reservationData'));
+    const reservations = JSON.parse(localStorage.getItem('reservations')) || [];
     const reservationDetails = document.getElementById('reservationDetails');
-
-    if (reservationData) {
-        const { name, email, guests, date, time } = reservationData;
-        reservationDetails.innerHTML = `
-            <p><strong>Name:</strong> ${name}</p>
-            <p><strong>Email:</strong> ${email}</p>
-            <p><strong>Number of Guests:</strong> ${guests}</p>
-            <p><strong>Date:</strong> ${date}</p>
-            <p><strong>Time:</strong> ${time}</p>
-        `;
+    
+    if (reservations.length > 0) {
+        let reservationHTML = '<h3>All Reservations:</h3>';
+        reservations.forEach((reservation, index) => {
+            reservationHTML += `
+                <div class="reservation">
+                    <p><strong>Reservation ${index + 1}:</strong></p>
+                    <p><strong>Name:</strong> ${reservation.name}</p>
+                    <p><strong>Email:</strong> ${reservation.email}</p>
+                    <p><strong>Number of Guests:</strong> ${reservation.guests}</p>
+                    <p><strong>Date:</strong> ${reservation.date}</p>
+                    <p><strong>Time:</strong> ${reservation.time}</p>
+                </div>
+            `;
+        });
+        reservationDetails.innerHTML = reservationHTML;
     } else {
-        reservationDetails.innerHTML = '<p>No reservation data found!</p>';
+        reservationDetails.innerHTML = '<p>No reservations found!</p>';
     }
 };
 
 // Call the function to display reservation details when the page loads
 window.addEventListener('load', displayReservationDetails);
 
-// Function to clear reservation data from localStorage
-const clearReservationData = () => {
-    localStorage.removeItem('reservationData');
-    // Optionally, redirect to another page after clearing reservation data
-    window.location.href = 'index.html'; // Change 'index.html' to your home page
+// Function to add a new reservation to localStorage
+const addReservation = (reservation) => {
+    const reservations = JSON.parse(localStorage.getItem('reservations')) || [];
+    reservations.push(reservation);
+    localStorage.setItem('reservations', JSON.stringify(reservations));
 };
