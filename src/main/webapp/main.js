@@ -43,44 +43,37 @@ ScrollReveal().reveal(".event__content", {
 });
 
 
-  document.addEventListener('DOMContentLoaded', function() {
-    const reservationForm = document.getElementById('reservationForm');
-    
-    reservationForm.addEventListener('submit', function(event) {
-      event.preventDefault(); // Prevent form submission
-      
-      // Get form inputs
-      const name = document.querySelector('input[name="name"]').value;
-      const email = document.querySelector('input[name="email"]').value;
-      const date = document.querySelector('input[name="date"]').value;
-      const time = document.querySelector('input[name="time"]').value;
-      const people = document.querySelector('input[name="people"]').value;
-      
-      // Create reservation object
-      const reservation = {
+  document.addEventListener("DOMContentLoaded", function() {
+    // تحديد النموذج والاستماع لحدث submit
+    const form = document.getElementById("reservationForm");
+    form.addEventListener("submit", function(event) {
+      event.preventDefault(); // منع السلوك الافتراضي للنموذج
+
+      // جمع البيانات من النموذج
+      const name = form.querySelector('input[name="name"]').value;
+      const email = form.querySelector('input[name="email"]').value;
+      const date = form.querySelector('input[name="date"]').value;
+      const time = form.querySelector('input[name="time"]').value;
+      const people = form.querySelector('input[name="people"]').value;
+
+      // إنشاء القائمة
+      const reservationList = {
         name: name,
         email: email,
         date: date,
         time: time,
         people: people
       };
-      
-      // Add reservation to list
-      addToReservationList(reservation);
-      
-      // Reset form
-      reservationForm.reset();
+
+      // إضافة القائمة إلى مصفوفة القوائم
+      let reservations = JSON.parse(localStorage.getItem("reservations")) || [];
+      reservations.push(reservationList);
+
+      // حفظ مصفوفة القوائم في ذاكرة التخزين المحلية
+      localStorage.setItem("reservations", JSON.stringify(reservations));
+
+      // إرسال المستخدم إلى صفحة base.html بعد الانتهاء من الحجز
+      window.location.href = "base.html";
     });
-    
-    function addToReservationList(reservation) {
-      // Get existing reservations or initialize empty array
-      let reservations = JSON.parse(localStorage.getItem('reservations')) || [];
-      
-      // Add new reservation to the list
-      reservations.push(reservation);
-      
-      // Save updated list to local storage
-      localStorage.setItem('reservations', JSON.stringify(reservations));
-    }
   });
 
