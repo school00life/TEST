@@ -41,3 +41,46 @@ ScrollReveal().reveal(".order__card", {
 ScrollReveal().reveal(".event__content", {
   duration: 1000,
 });
+
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const reservationForm = document.getElementById('reservationForm');
+    
+    reservationForm.addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent form submission
+      
+      // Get form inputs
+      const name = document.querySelector('input[name="name"]').value;
+      const email = document.querySelector('input[name="email"]').value;
+      const date = document.querySelector('input[name="date"]').value;
+      const time = document.querySelector('input[name="time"]').value;
+      const people = document.querySelector('input[name="people"]').value;
+      
+      // Create reservation object
+      const reservation = {
+        name: name,
+        email: email,
+        date: date,
+        time: time,
+        people: people
+      };
+      
+      // Add reservation to list
+      addToReservationList(reservation);
+      
+      // Reset form
+      reservationForm.reset();
+    });
+    
+    function addToReservationList(reservation) {
+      // Get existing reservations or initialize empty array
+      let reservations = JSON.parse(localStorage.getItem('reservations')) || [];
+      
+      // Add new reservation to the list
+      reservations.push(reservation);
+      
+      // Save updated list to local storage
+      localStorage.setItem('reservations', JSON.stringify(reservations));
+    }
+  });
+
