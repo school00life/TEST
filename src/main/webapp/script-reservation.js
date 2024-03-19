@@ -25,10 +25,3 @@ const displayReservationDetails = () => {
 
 // Call the function to display reservation details when the page loads
 window.addEventListener('load', displayReservationDetails);
-
-// Function to add a new reservation to localStorage
-const addReservation = (reservation) => {
-    const reservations = JSON.parse(localStorage.getItem('reservations')) || [];
-    reservations.push(reservation);
-    localStorage.setItem('reservations', JSON.stringify(reservations));
-};
