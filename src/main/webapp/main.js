@@ -42,38 +42,29 @@ ScrollReveal().reveal(".event__content", {
   duration: 1000,
 });
 
+  document.getElementById("reservationForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent form submission
 
-  document.addEventListener("DOMContentLoaded", function() {
-    // تحديد النموذج والاستماع لحدث submit
-    const form = document.getElementById("reservationForm");
-    form.addEventListener("submit", function(event) {
-      event.preventDefault(); // منع السلوك الافتراضي للنموذج
+    // Get form values
+    var name = document.querySelector("#reservationForm input[name='NAME']").value;
+    var email = document.querySelector("#reservationForm input[name='EMAIL']").value;
+    var date = document.querySelector("#reservationForm input[name='DATE']").value;
+    var time = document.querySelector("#reservationForm input[name='TIME']").value;
+    var people = document.querySelector("#reservationForm input[name='PEOPLE']").value;
 
-      // جمع البيانات من النموذج
-      const name = form.querySelector('input[name="name"]').value;
-      const email = form.querySelector('input[name="email"]').value;
-      const date = form.querySelector('input[name="date"]').value;
-      const time = form.querySelector('input[name="time"]').value;
-      const people = form.querySelector('input[name="people"]').value;
+    // Create reservation object
+    var reservation = {
+      name: name,
+      email: email,
+      date: date,
+      time: time,
+      people: people
+    };
 
-      // إنشاء القائمة
-      const reservationList = {
-        name: name,
-        email: email,
-        date: date,
-        time: time,
-        people: people
-      };
+    // Store reservation data in localStorage
+    localStorage.setItem("reservation", JSON.stringify(reservation));
 
-      // إضافة القائمة إلى مصفوفة القوائم
-      let reservations = JSON.parse(localStorage.getItem("reservations")) || [];
-      reservations.push(reservationList);
-
-      // حفظ مصفوفة القوائم في ذاكرة التخزين المحلية
-      localStorage.setItem("reservations", JSON.stringify(reservations));
-
-      // إرسال المستخدم إلى صفحة base.html بعد الانتهاء من الحجز
-      window.location.href = "reservation.html";
-    });
+    // Redirect to base.html
+    window.location.href = "reservation.html";
   });
 
