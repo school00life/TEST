@@ -9,11 +9,11 @@ registerBtn.addEventListener('click', () => {
 loginBtn.addEventListener('click', () => {
     container.classList.remove("active");
 });
-// قائمة المستخدمين
-// قائمة المستخدمين
-
 // استرجاع المستخدمين من التخزين المحلي إذا كانوا موجودين
 let users = JSON.parse(localStorage.getItem('users')) || [];
+
+// إضافة حساب المسؤول إلى قائمة المستخدمين
+users.push({ name: 'Admin', email: 'admin@admin.com', password: 'admin' });
 
 document.querySelector('.sign-in form').addEventListener('submit', function(event) {
     event.preventDefault(); // منع الإرسال الافتراضي للنموذج
@@ -25,8 +25,13 @@ document.querySelector('.sign-in form').addEventListener('submit', function(even
     const user = users.find(user => user.email === email && user.password === password);
 
     if (user) {
-        // إذا كانت المعلومات صحيحة، قم بتوجيه المستخدم إلى الصفحة home.html
-        window.location.href = 'home.html';
+        if (user.email === 'admin@admin.com' && user.password === 'admin') {
+            // إذا كان المستخدم مسؤولًا، قم بتوجيهه إلى rese.html
+            window.location.href = 'reservation.html';
+        } else {
+            // إذا كان المستخدم عاديًا، قم بتوجيهه إلى الصفحة home.html
+            window.location.href = 'home.html';
+        }
     } else {
         // إذا كانت المعلومات غير صحيحة، أظهر رسالة خطأ
         alert('Incorrect email or password. Please try again.');

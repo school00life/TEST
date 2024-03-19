@@ -41,3 +41,18 @@ ScrollReveal().reveal(".order__card", {
 ScrollReveal().reveal(".event__content", {
   duration: 1000,
 });
+document.getElementById('reservationForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+  
+  // Get form values
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+  const guests = document.getElementById('guests').value;
+  const date = document.getElementById('date').value;
+  const time = document.getElementById('time').value;
+  
+  // Store form values in localStorage (temporary storage)
+  localStorage.setItem('reservationData', JSON.stringify({ name, email, guests, date, time }));
+  
+  // Redirect to reservation page
+  window.location.href = 'reservation.html';
