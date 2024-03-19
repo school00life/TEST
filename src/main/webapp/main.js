@@ -41,18 +41,32 @@ ScrollReveal().reveal(".order__card", {
 ScrollReveal().reveal(".event__content", {
   duration: 1000,
 });
-document.getElementById('reservationForm').addEventListener('submit', function(event) {
-  event.preventDefault();
-  
-  // Get form values
-  const name = document.getElementById('name').value;
-  const email = document.getElementById('email').value;
-  const guests = document.getElementById('guests').value;
-  const date = document.getElementById('date').value;
-  const time = document.getElementById('time').value;
-  
-  // Store form values in localStorage (temporary storage)
-  localStorage.setItem('reservationData', JSON.stringify({ name, email, guests, date, time }));
-  
-  // Redirect to reservation page
-  window.location.href = 'reservation.html';
+// استهدف النموذج في صفحة الحجز
+const reservationForm = document.getElementById('reservationForm');
+
+// استمع لحدث إرسال النموذج
+reservationForm.addEventListener('submit', (event) => {
+    event.preventDefault(); // منع إرسال النموذج بطريقة التقليدية
+    
+    // استخراج القيم من النموذج
+    const name = reservationForm.elements['name'].value;
+    const email = reservationForm.elements['email'].value;
+    const guests = reservationForm.elements['guests'].value;
+    const date = reservationForm.elements['date'].value;
+    const time = reservationForm.elements['time'].value;
+    
+    // إنشاء كائن حجز جديد
+    const newReservation = {
+        name: name,
+        email: email,
+        guests: guests,
+        date: date,
+        time: time
+    };
+    
+    // إضافة الحجز الجديد إلى قائمة الحجوزات وتحديث البيانات في LocalStorage
+    addReservation(newReservation);
+    
+    // إعادة توجيه المستخدم إلى صفحة الحجز لعرض تفاصيل الحجز
+    window.location.href = 'reservation.html';
+});
