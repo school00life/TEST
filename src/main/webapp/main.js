@@ -73,7 +73,7 @@ ScrollReveal().reveal(".event__content", {
       localStorage.setItem("reservations", JSON.stringify(reservations));
 
       // إرسال المستخدم إلى صفحة base.html بعد الانتهاء من الحجز
-      window.location.href = "base.html";
+      window.location.href = "reservation.html";
     });
   });
 
