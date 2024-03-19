@@ -1,11 +1,25 @@
+// قم بتعريف قائمة لتخزين الحجوزات
+let reservationsList = [];
+
+// استرجاع البيانات من LocalStorage إذا كانت موجودة
+const storedReservations = JSON.parse(localStorage.getItem('reservations'));
+if (storedReservations) {
+    reservationsList = storedReservations;
+}
+
+// إضافة حجز جديد إلى القائمة
+const addReservation = (reservation) => {
+    reservationsList.push(reservation);
+    localStorage.setItem('reservations', JSON.stringify(reservationsList));
+};
+
 // Retrieve and display reservation details
 const displayReservationDetails = () => {
-    const reservations = JSON.parse(localStorage.getItem('reservations')) || [];
     const reservationDetails = document.getElementById('reservationDetails');
     
-    if (reservations.length > 0) {
+    if (reservationsList.length > 0) {
         let reservationHTML = '<h3>All Reservations:</h3>';
-        reservations.forEach((reservation, index) => {
+        reservationsList.forEach((reservation, index) => {
             reservationHTML += `
                 <div class="reservation">
                     <p><strong>Reservation ${index + 1}:</strong></p>
