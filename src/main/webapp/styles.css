@@ -414,6 +414,10 @@ nav {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+.hidden {
+  display: none;
+}
+
 
 @media (width > 768px) {
   nav {

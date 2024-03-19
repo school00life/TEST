@@ -41,6 +41,7 @@ ScrollReveal().reveal(".order__card", {
 ScrollReveal().reveal(".event__content", {
   duration: 1000,
 });
+
 // استهدف النموذج في صفحة الحجز
 const reservationForm = document.getElementById('reservationForm');
 
@@ -69,4 +70,15 @@ reservationForm.addEventListener('submit', (event) => {
     
     // إعادة توجيه المستخدم إلى صفحة الحجز لعرض تفاصيل الحجز
     window.location.href = 'reservation.html';
+});
+// اجلب زر "Find Table"
+const findTableButton = document.querySelector('button[name="find-table"]');
+
+// استمع لحدث النقر على زر "Find Table"
+findTableButton.addEventListener('click', (event) => {
+    event.preventDefault(); // منع سلوك الافتراضي للزر
+
+    // إذا تم النقر على الزر، قم بإظهار شعار الحجز
+    const reservationConfirmation = document.getElementById('reservationConfirmation');
+    reservationConfirmation.classList.remove('hidden');
 });
